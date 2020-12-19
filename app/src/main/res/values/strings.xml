@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name"><b>AndhraBasket</b></string>
+    <integer name="swing_anim_time">750</integer>
+    <string name="facebook_app_id">592119734455336</string>
+
+
+    <string name="label_error_email_message">Please enter your mail</string>
+    <string name="label_error_email_valid_message">Please enter valid email address</string>
+    <string name="terms">By Signing up, you agree to the AndhraBasket </string>
+    <string name="termstext"><u><b>Terms and Conditions</b></u> </string>
+    <string name="read_file">This app needs access to your file storage so that it can read photos.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="terms_text">1.free delivery order over Rs.300.</string>
+    <string name="terms_text_two">2.Rs.30 deliver charge above 3 KMs. </string>
+    <string name="terms_text_three">3.You as a customer can cancel your order anytime up to the cut-off time of the slot for which you have placed an order by calling our customer service.</string>
+    <string name="terms_text_four">4. All the products listed on the Site will be sold at MRP unless otherwise specified. The prices mentioned at the time of ordering will be the prices charged on the date of the delivery. </string>
+    <string name="terms_text_five">5. All our Customers to return the product at the time of delivery if due to some reason they are not satisfied with the quality or freshness of the product.</string>
+
+</resources>

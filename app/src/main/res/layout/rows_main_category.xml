@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+
+
+    <com.andexert.library.RippleView
+        android:id="@+id/more"
+        rv_centered="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        app:rv_color="#8B0000">
+
+        <RelativeLayout
+            android:id="@+id/linear_main_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+           >
+
+
+                <ImageView
+                    android:id="@+id/img_category"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:src="@mipmap/babycare"
+                    android:scaleType="fitXY" />
+
+                <com.absket.in.CustomFonts.MyTextViewBold
+                    android:id="@+id/tv_categoryname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:textColor="#000000"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/img_category"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:maxLines="2"
+                    android:layout_marginBottom="3dp"
+                    android:visibility="visible" />
+
+
+
+        </RelativeLayout>
+    </com.andexert.library.RippleView>
+</LinearLayout>

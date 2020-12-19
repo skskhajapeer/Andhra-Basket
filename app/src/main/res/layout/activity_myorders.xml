@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent" android:id="@+id/swipe_refresh"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:background="@color/toolbarColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp" android:id="@+id/img_back"
+                    android:layout_height="20dp" android:background="@drawable/leftarrow_white" />
+                <com.absket.in.CustomFonts.MyTextView
+                    android:textStyle="bold" android:textColor="#FFFFFF"
+                    android:layout_width="match_parent" android:gravity="center"  android:textSize="16dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_height="wrap_content" android:text="MyOrders"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    <ListView android:id="@+id/list_categoryproduct"
+        android:dividerHeight="10dp"
+        android:layout_margin="5dp" android:divider="#00FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

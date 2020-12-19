@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "785096811083",
+    "project_id": "andhrabasket-a6e35",
+    "storage_bucket": "andhrabasket-a6e35.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785096811083:android:13e0e06650806ee9b563ce",
+        "android_client_info": {
+          "package_name": "com.absket.in"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785096811083-40isfm0sl7cdu1r2b1g0dud88qijepbd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.absket.in",
+            "certificate_hash": "23ec32dc26da33a3f88342dab0049556ae7099a9"
+          }
+        },
+        {
+          "client_id": "785096811083-itukmbmulisnfa03n0qbj82bh9oc3s3t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8rwNUcJ69MXiqpKLEE7UUYV6zAayu88Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "785096811083-itukmbmulisnfa03n0qbj82bh9oc3s3t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

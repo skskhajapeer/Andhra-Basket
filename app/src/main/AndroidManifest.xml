@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.absket.in">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        tools:node="remove" />
+
+    <application
+        android:name=".utils.TestApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/appicon_latest"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon">
+        <activity
+            android:name=".GetStartedActivity"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".SignUpActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNew" />
+        <!-- <activity
+             android:name=".GetStartedActivity"
+             android:screenOrientation="fullSensor"
+             android:theme="@style/AppThemeNew" />-->
+        <activity
+            android:name=".MainActivityLatest"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".MainActivity_New"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".ListProductsActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".ReviewOrdersActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNew"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".MyProfileActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".NotificationActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".Imagezoom"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.Dialog.Bottom" />
+        <activity
+            android:name=".CustomerServiceActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".SpinWheelActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".SelectionScreenActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".SearchActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".MyOrdersActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".ReferActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".LastPurchaseActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".ReviewOrdersLastPurchaseActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".DescriptionActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".SpecialShopsActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".MyOrdersFullActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".PaymentWebView"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".FAQActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNew" />
+        <activity
+            android:name=".ForgotPasswordActivity_New"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.Dialog.Bottom" />
+        <activity
+            android:name=".ChangePassword"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.Dialog.Bottom" />
+
+        <activity
+            android:name=".NewSignupActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.Dialog.Bottom" />
+
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MyFirebaseInstanceIDService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.webengage.sdk.android.debug"
+            android:value="true" /> <!-- only for debugging -->
+
+        <meta-data
+            android:name="com.webengage.sdk.android.key"
+            android:value="~9919829a" /> <!-- Replace with your WebEngage's license code -->
+
+        <meta-data
+            android:name="com.webengage.sdk.android.location_tracking"
+            android:value="false" /> <!-- Set false if location tracking is not required -->
+
+        <service android:name="com.webengage.sdk.android.ExecutorService" />
+        <service android:name="com.webengage.sdk.android.EventLogService" />
+
+        <activity
+            android:name="com.webengage.sdk.android.actions.render.WebEngageActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <receiver android:name="com.webengage.sdk.android.WebEngageReceiver">
+            <intent-filter>
+                <action android:name="com.webengage.sdk.android.intent.ACTION" />
+
+                <category android:name="com.flyin.bookings" /> <!-- Replace with your package name -->
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.webengage.sdk.android.auto_gcm_registration"
+            android:value="false" />
+
+        <receiver
+            android:name="com.webengage.sdk.android.InstallTracker"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.webengage.sdk.android.WebEngagePushReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="~9919829a" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="5214500d7db463592e478386519589a0ee6220dd" />
+
+    </application>
+
+</manifest>

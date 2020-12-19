@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar" android:background="@color/toolbarColor"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="26dp" android:layout_gravity="center" android:id="@+id/img_back"
+                android:layout_height="26dp" android:background="@drawable/leftarrow_white" />
+
+            <com.absket.in.CustomFonts.MyTextView
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp" android:textSize="16dp"
+                android:layout_width="match_parent" android:textColor="#FFFFFF" android:layout_gravity="center"
+                android:layout_height="wrap_content" android:text="Address "/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+</LinearLayout>

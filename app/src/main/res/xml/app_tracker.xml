@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- End current session if app sleeps for a period of time -->
+    <integer name="ga_sessionTimeout">300</integer>
+
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!--  The property id associated with this analytics tracker -->
+    <!--this is production traCKING ID-->
+    <string name="ga_trackingId">UA-120667967-1</string>
+
+    <!--<string name="ga_trackingId">UA-113326310-1</string>-->
+
+    <!--<string name="ga_trackingId">UA-112025415-1</string>-->
+
+    <string name="ga_sampleFrequency">100.0</string>
+
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+    <!--
+      See Project Structure -> Analytics -> Google Analytics -> Learn More
+      to learn more about configuring this file.
+    -->
+
+    <screenName name="com.absket.in.SplashScreenActivity">Splash Screen</screenName>
+    <screenName name="com.absket.in.MainActivityLatest">Landing Page</screenName>
+    <screenName name="com.absket.in.LoginActivity">Login Page</screenName>
+    <screenName name="com.absket.in.SignUpActivity">Signup Page
+    </screenName>
+    <screenName name="com.absket.in.MainActivity_New">Dashboard Page</screenName>
+
+    <screenName name="com.absket.in.DescriptionActivity">Description Page</screenName>
+
+    <screenName name="com.absket.in.ReviewOrdersActivity">Checkout Page</screenName>
+    <screenName name="com.absket.in.PaymentWebView">Payment Page</screenName>
+    <screenName name="com.absket.in.MyProfileActivity">MyProfile Page</screenName>
+    <screenName name="com.absket.in.MyOrdersActivity">MyOrders Page</screenName>
+
+    <screenName name="com.absket.in.LastPurchaseActivity">LastPurchase Page</screenName>
+    <screenName name="com.absket.in.SearchActivity">SearchProduct Page</screenName>
+    <screenName name="com.absket.in.MyOrdersFullActivity">MyOrders Listing Page</screenName>
+
+    <screenName name="com.absket.in.ForgotPasswordActivity_New">Forgot Password Page</screenName>
+
+    <screenName name="com.absket.in.ChangePassword">Change Password Page</screenName>
+
+    <screenName name="com.absket.in.ListProductsActivity">List Products Page</screenName>
+
+
+</resources>

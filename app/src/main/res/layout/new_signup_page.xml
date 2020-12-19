@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.absket.in.bottomactivity.InterceptableFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/interceptable_frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/drag_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/andhrabasket"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:elevation="0dp">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:statusBarScrim="@null">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_topbar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+
+                        <android.support.v7.widget.Toolbar
+                            android:id="@+id/toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            app:layout_scrollFlags="scroll|enterAlways">
+
+
+                        </android.support.v7.widget.Toolbar>
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible"
+                app:layout_scrollFlags="snap">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingTop="5dp"
+                    app:layout_scrollFlags="snap"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="#FEC524"
+                    app:tabMode="fixed" />
+
+            </LinearLayout>
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.design.widget.TabLayout
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:id="@+id/tabs1"
+            app:tabTextColor="@color/toolbarColor"
+            app:tabSelectedTextColor="@color/white"
+            android:layout_gravity="center"
+            app:tabIndicatorColor="#00000000"
+            android:layout_width="wrap_content"
+            app:tabGravity="fill"
+            app:tabMode="scrollable"
+            android:layout_height="40dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+
+
+
+            android:background="@drawable/signup_tab_bg"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+
+                android:id="@+id/login_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:background="@color/toolbarColor"
+                />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/toolbarColor"
+                ></View>
+
+
+
+            <TextView
+                android:id="@+id/sign_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Sign Up"
+
+
+
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:background="@color/white"
+                />
+
+        </LinearLayout>
+
+
+
+
+        <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="15dp"
+       android:layout_marginEnd="15dp"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/fname_input"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_uname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:hint=" UserName"
+                android:inputType="text"
+                android:singleLine="true"
+                android:drawablePadding="10dp"
+                android:layout_marginBottom="5dp"
+                android:drawableStart="@drawable/username_icon"
+                android:textColor="@android:color/black"
+                android:textColorHint="#B2B2B2"
+                android:textSize="16sp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/email_input"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Email"
+                android:inputType="text"
+                android:singleLine="true"
+                android:drawablePadding="10dp"
+                android:layout_marginBottom="5dp"
+                android:drawableStart="@drawable/username_icon"
+                android:textColor="@android:color/black"
+                android:textColorHint="#B2B2B2"
+
+                android:textSize="16sp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/pswd_input"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_pswd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:hint=" Password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:drawablePadding="10dp"
+                android:layout_marginBottom="5dp"
+                android:paddingStart="8dp"
+
+                android:drawableStart="@drawable/ic_lock"
+                android:textColor="@android:color/black"
+                android:textColorHint="#B2B2B2"
+
+                android:textSize="16sp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/referral_layout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_refcode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Referel Code (Optional)"
+                android:inputType="text"
+                android:singleLine="true"
+                android:drawablePadding="10dp"
+                android:layout_marginBottom="5dp"
+                android:paddingStart="8dp"
+
+                android:drawableStart="@drawable/ic_lock"
+                android:textColor="@android:color/black"
+                android:textColorHint="#B2B2B2"
+
+                android:textSize="16sp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <com.absket.in.CustomFonts.MyTextView
+            android:id="@+id/tv_forgotpswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="forgot password ? "
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="end"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            />
+
+        <com.absket.in.CustomFonts.MyTextView
+            android:id="@+id/tv_already_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already a member ? "
+            android:padding="10dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="end"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            />
+
+        <com.absket.in.CustomFonts.MyTextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Login"
+            android:background="@drawable/button_bg"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <com.absket.in.CustomFonts.MyTextView
+                android:id="@+id/have_login"
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="Don't have an account  ?"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content" />
+            <com.absket.in.CustomFonts.MyTextView
+                android:id="@+id/signup_now"
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/have_login"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text=" Sign Up Now "
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+             android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_margin="5dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/facebooknew" />
+
+            <ImageView
+                android:id="@+id/google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/facebook"
+                android:layout_marginEnd="10dp"
+                android:layout_margin="5dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/google_plus_new" />
+        </RelativeLayout>
+
+
+        <com.absket.in.CustomFonts.MyTextView
+            android:id="@+id/tv_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skip"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="end"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            />
+
+
+
+
+
+        <!-- <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="5dp"
+            android:id="@+id/forgot_laayout"
+             android:layout_gravity="end"
+             android:orientation="horizontal">
+             <com.absket.in.CustomFonts.MyTextView
+                 android:id="@+id/tv_forgotpswd"
+                 android:layout_width="wrap_content"
+                 android:padding="5dp"
+                 android:layout_gravity="end"
+                 android:gravity="end"
+                 android:text="forgot password"
+                 android:visibility="gone"
+                 android:textColor="@android:color/black"
+                 android:layout_height="wrap_content" />
+
+
+             <com.absket.in.CustomFonts.MyTextView
+                 android:id="@+id/already_member"
+                 android:layout_width="wrap_content"
+                 android:padding="5dp"
+                 android:layout_gravity="end"
+                 android:gravity="end"
+                 android:layout_toRightOf="@+id/tv_forgotpswd"
+                 android:text="Already a memeber ?"
+                 android:textColor="@android:color/black"
+                 android:layout_height="wrap_content" />
+
+             <com.absket.in.CustomFonts.MyTextView
+                 android:layout_width="wrap_content"
+                 android:padding="5dp"
+                 android:layout_gravity="end"
+                 android:gravity="end"
+                 android:layout_toRightOf="@+id/already_member"
+                 android:text="Login"
+                 android:textColor="@color/toolbarColor"
+                 android:layout_height="wrap_content" />
+         </RelativeLayout>-->
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</com.absket.in.bottomactivity.InterceptableFrameLayout>

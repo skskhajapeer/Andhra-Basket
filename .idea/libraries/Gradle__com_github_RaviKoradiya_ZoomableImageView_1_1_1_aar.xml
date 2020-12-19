@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.RaviKoradiya:ZoomableImageView:1.1.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ZoomableImageView-1.1.1.aar/e392717b373c6ec27c8dff09d8614a0b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ZoomableImageView-1.1.1.aar/e392717b373c6ec27c8dff09d8614a0b/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.RaviKoradiya/ZoomableImageView/1.1.1/917f13ee543f227fc2327c2159025c3160dea74/ZoomableImageView-1.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
